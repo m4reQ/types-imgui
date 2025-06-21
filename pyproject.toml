@@ -9,6 +9,8 @@ description = "Type stubs for the Dear ImGui Python bindings."
 requires-python = ">=3.12"
 urls = { Homepage = "https://github.com/m4reQ/types-imgui", Issues = "https://github.com/m4reQ/types-imgui/issues" }
 authors = [ {name = "m4reQ", email="mmizerski4@gmail.com"} ]
+license = "BSD-3-Clause"
+license-files = [ "LICENSE" ]
 classifiers = [
     "Typing :: Typed",
     "Typing :: Stubs Only",
