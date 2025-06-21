@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "types-imgui"
+version = "0.1.0"
+description = "Type stubs for the Dear ImGui Python bindings."
+requires-python = ">=3.12"
+classifiers = [
+    "Typing :: Typed",
+    "Typing :: Stubs Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools]
+packages = ["types_imgui"]
+
+[tool.setuptools.package-data]
+# Include .pyi files in the stub package
+"types_imgui" = ["*.pyi", "**/*.pyi", "**/py.typed"]
+
+[tool.setuptools.exclude-package-data]
+# Prevent accidental inclusion of .py files (in a stubs-only package)
+"types_imgui" = ["*.py"]

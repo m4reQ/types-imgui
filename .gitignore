@@ -1,0 +1,7 @@
+**/*.egg-info
+build/
+scripts/
+.vscode/
+.mypy_cache/
+**/__pycache__
+
